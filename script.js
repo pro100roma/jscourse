@@ -1,11 +1,23 @@
 'use strict';
 
-let incr = 10,
-	decr = 10;
+let money = prompt('What your mounth budget?', ''),
+	time = prompt('Enter date in YYYY-MM-DD format', '');
 
+let appData = {
+	budget: money,
+	timeData: time,
+	expenses: {},
+	optionalExpenses: {},
+	income: [],
+	savings: false
+};
 
-console.log(++incr);
-console.log(decr--);
+let a1 = prompt('Введите обязательную статью расходов в этом месяце', ''),
+	a2 = prompt('Во сколько обойдется?', ''),
+	a3 = prompt('Введите обязательную статью расходов в этом месяце', ''),
+	a4 = prompt('Во сколько обойдется?', '');
 
-console.log(2 == "2");
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
 
+alert(appData.budget / 30);
