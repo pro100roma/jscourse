@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>JS Udemy</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+
+<body>
+
+	<div class="page-wrp">
+		<div class="budget-form-wrap">
+			<form>
+				<p>
+					<label for="mounth-budget">Введите месячный бюджет
+						<input type="text" name="mounth-budget" id="mounth-budget">
+					</label>
+				</p>
+				<div class="expenses require-expenses">
+					<p>Обязательные расходы: <a href="#">+</a></p>
+					<p class="expense-field">
+						<label for="">Статья обязательного расхода:
+							<input type="text">
+						</label>
+						<label for="">Во сколько обойдется:
+							<input type="text">
+						</label>
+					</p>
+				</div>
+				<div class="expenses optional-expenses">
+						<p>Необязательные расходы: <a href="#">+</a></p>
+						<p class="expense-field">
+							<label for="">Статья обязательного расхода:
+								<input type="text">
+							</label>
+							<label for="">Во сколько обойдется:
+								<input type="text">
+							</label>
+						</p>
+					</div>
+				<input type="submit" value="Просчитать">
+			</form>
+
+			<div class="budget-outputs">
+				<p class="daily-budget"></p>
+				<p class="budget-level"></p>
+				<p class="savings"></p>
+			</div>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+	
+</body>
+</html>
